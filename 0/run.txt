@@ -1,0 +1,4 @@
+// index.js تاكد من ان داخل الملف مباشرتنا
+npm i express
+npm i socket.io
+node index.js

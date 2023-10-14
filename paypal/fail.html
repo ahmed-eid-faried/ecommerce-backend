@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Page</title>
+</head>
+<body>
+  <h1>Payment Cancelled</h1>
+  <p>Your payment was not completed.</p>
+  <button id="returnButton">Return to App</button>
+
+  <script>
+    // Add event listener to the button
+    document.getElementById("returnButton").addEventListener("click", function() {
+      // Call the custom URL scheme to return to the app
+      window.location.href = "myapp://cancel";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure the content takes full viewport height */
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+
+<body>
+    <img width="100" height="100" src="https://img.icons8.com/ios/100/40C057/task-completed.png" alt="task-completed" />
+    <h1>Success</h1>
+    <button id="returnButton">Return to App</button>
+
+    <script>
+        // Add event listener to the button
+        document.getElementById("returnButton").addEventListener("click", function () {
+            // Call the custom URL scheme to return to the app
+            window.location.href = "myapp://cancel";
+        });
+    </script>
+</body>
+
+</html>
